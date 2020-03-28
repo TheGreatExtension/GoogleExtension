@@ -1,25 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="newtab.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extension</title>
 </head>
 <body>
-  <img src='./icon1.png' id='hydrateImage'>
+  <div class="bg">
   <br>
   <button onclick="myFunction()">Exam</button>
   <button onclick="myFunction()">Deadline</button>
   <button onclick="myFunction()">Event</button>
   <button onclick="myFunction()">Other</button>
   <p id="demo" onclick="myFunction()">Add a New Event</p>
-
-<script>
-function myFunction() {
-    document.getElementById("demo").style.color = "red";
-}
-</script>
-       
 	<br>
 	<label for="meeting-time">Choose a time for your appointment:</label>
 
@@ -33,5 +27,14 @@ function myFunction() {
          </textarea><br>
          <input type = "submit" value = "Add" />
       </form>
-    </body>
+  </div>
+  </body>
+
+    <script>
+      function myFunction() {
+          document.getElementById("demo").style.color = "red";
+      }
+      </script>
 </html>
+
+
