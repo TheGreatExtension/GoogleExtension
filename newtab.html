@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="newtab.css">
+    <link rel="stylesheet" href="newtab.css">   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extension</title>
 </head>
 <body>
   <div class="bg">
-  <br>
-  <button onclick="myFunction()">Exam</button>
-  <button onclick="myFunction()">Deadline</button>
-  <button onclick="myFunction()">Event</button>
-  <button onclick="myFunction()">Other</button>
-  <p id="demo" onclick="myFunction()">Add a New Event</p>
-	<br>
-	<label for="meeting-time">Choose a time for your appointment:</label>
-
-	<input type="datetime-local" id="meeting-time"
-       name="Event Time" value="2020-04-01T19:30"
-       min="2018-06-07T00:00" max="2030-06-14T00:00">
-	<form action = "/cgi-bin/hello_get.cgi" method = "get">
-        Notes
-         <br>
-         <textarea rows = "5" cols = "60" name = "description">
-         </textarea><br>
-         <input type = "submit" value = "Add" />
-      </form>
+    <br>
+    <button >Exam</button>
+    <button >Deadline</button>
+    <button >Event</button>
+    <button >Other</button>
+    <p id="demo" >Add a New Event</p>
+    <br>
+    <form id="form_id" method = "POST">
+      <label for="meeting-time">Choose a time for your appointment:</label>
+      <input type="datetime-local" id="meeting-time"
+          name="EventTime" value="2020-04-01T19:30"
+          min="2018-06-07T00:00" max="2030-06-14T00:00">
+      <br>
+      <label>Notes:</label>
+      <!-- <input id="content" placeholder="Description" type="textarea" rows="5" cols="60"> -->
+          <br>
+          <textarea id="description" placeholder="Description" rows = "5" cols = "60" ></textarea>
+          <br>   
+    </form>
+    <input type="submit" value="Add" id="button">
+    <p id="insertContent"></p>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p id="insertTime"></p>
+        <p id="insertContent"></p>
+      </div>
+    </div> -->
   </div>
-  </body>
-
-    <script>
-      function myFunction() {
-          document.getElementById("demo").style.color = "red";
-      }
-      </script>
+</body>
 </html>
-
+<script src="newtab.js"></script>
 
