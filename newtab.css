@@ -13,7 +13,7 @@ body, html {
   padding: 0;
   color: black;
   text-align: center;
-  /* transition: background 60s linear; */
+  transition: background 1s linear; 
 }
 
 table {  
