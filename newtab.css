@@ -76,10 +76,7 @@ tr td:hover { background:#B0C4DE; color: #FFF; }
     color: black;
 }
 
-
-
-
-  /* The sidebar menu */
+/* The sidebar menu */
 .sidebar {
     height: 100%; 
     width: 450px; /* width - change this with JavaScript */

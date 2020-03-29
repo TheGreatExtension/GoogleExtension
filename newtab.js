@@ -147,13 +147,19 @@ var images = [
 var imageHead = document.getElementById("image-head");
 var i = 0;
 
-// setInterval(function() {
-//       imageHead.style.backgroundImage = "url(" + images[i] + ")";
-//       i = i + 1;
-//       if (i == images.length) {
-//       	i =  0;
-//       }
-// }, 60000);
+document.getElementById("autobg").onclick=function(){
+    if(document.getElementById("autobg").checked){
+        setInterval(function() {
+            imageHead.style.backgroundImage = "url(" + images[i] + ")";
+            i = i + 1;
+            if (i == images.length) {
+                i =  0;
+            }
+      }, 30000);
+    }
+}
+
+
 
 document.getElementById("changebg").onclick=function(){
     imageHead.style.backgroundImage = "url(" + images[i] + ")";
