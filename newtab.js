@@ -105,3 +105,19 @@ function sortTime(a,b){
         return (a[0] < b[0]) ? -1 : 1;
     }
 }
+
+var images = [
+    "b7.jpg","b8.jpg","b6.jpg",'b1.jpg','b2.jpg','b3.jpg',
+    'b4.jpg','b5.jpg','b9.jpg','b10.jpg','b11.jpg','b12.jpg'
+]
+
+var imageHead = document.getElementById("image-head");
+var i = 0;
+
+setInterval(function() {
+      imageHead.style.backgroundImage = "url(" + images[i] + ")";
+      i = i + 1;
+      if (i == images.length) {
+      	i =  0;
+      }
+}, 3000);

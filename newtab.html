@@ -7,7 +7,9 @@
     <title>Extension</title>
 </head>
 <body>
-  <div class="bg">
+  <div id="image-head" class="image-head">
+  <div class="centering-hack">
+
     <br>
     <button >Exam</button>
     <button >Deadline</button>
@@ -16,7 +18,7 @@
     <p id="demo" >Add a New Event</p>
     <br>
     <form id="form_id" method = "POST">
-      <label for="meeting-time">Choose a time for your appointment:</label>
+      <label for="meeting-time">Time for your event:</label>
       <input type="datetime-local" id="meeting-time"
           name="EventTime" value="2020-04-01T19:30"
           min="2018-06-07T00:00" max="2030-06-14T00:00">
@@ -27,8 +29,10 @@
       <br>   
     </form>
     <input type="submit" value="Add" id="button">
-    <table id="insertContent"></table>
+    <table id="insertContent"></table> 
   </div>
+    </div>
+</div>
 </body>
 </html>
 <script src="newtab.js"></script>

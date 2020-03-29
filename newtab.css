@@ -2,13 +2,49 @@ body, html {
     height: 100%;
   }
   
-.bg {
-    /* The image used */
-    background-image: url("background.JPG");
-    /* Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.image-head {
+  background-image:url("b2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+  transition: background 1s linear;
 }
+
+table {  
+    color: #F0F8FF;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 400px; 
+    border-collapse: 
+    collapse; border-spacing: 0; 
+}
+
+td, th {  
+    border: 1px solid #4B0082; /* No more visible border */
+    height: 30px; 
+    transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+th {  
+    background: #F0F8FF;  /* Darken header a bit */
+    font-weight: bold;
+}
+
+td {  
+    background:  #F0F8FF;
+    text-align: center;
+}
+
+/* Cells in even rows (2,4,6...) are one color */        
+tr:nth-child(even) td { background:  #F0F8FF; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */        
+tr:nth-child(odd) td { background: #E6E6FA; }  
+
+tr td:hover { background:#B0C4DE; color: #FFF; }  
+/* Hover cell effect! */
