@@ -9,13 +9,18 @@
 <body>
   <div id="image-head" class="image-head">
   <div class="centering-hack">
-
     <br>
-    <button >Exam</button>
-    <button >Deadline</button>
-    <button >Event</button>
-    <button >Other</button>
     <p id="demo" >Add a New Event</p>
+    <form>
+    <input type="radio" id="exam" value="Exam" name="type">
+    <label for="Exam">Exam</label>
+    <input type="radio" id="ddl" value="Ddl" name="type">
+    <label for="Ddl">Deadline</label>
+    <input type="radio" id="et" value="Et" name="type">
+    <label for="Et">Event</label>
+    <input type="radio" id="ot" value="Ot" name="type">
+    <label for="Ot">Other</label>
+    </form>
     <br>
     <form id="form_id" method = "POST">
       <label for="meeting-time">Time for your event:</label>
@@ -23,7 +28,9 @@
           name="EventTime" value="2020-04-01T19:30"
           min="2018-06-07T00:00" max="2030-06-14T00:00">
       <br>
+      <br>
       <label>Notes:</label>
+      <br>
       <br>
       <textarea id="description" placeholder="Description" rows = "5" cols = "60" ></textarea>
       <br>   
