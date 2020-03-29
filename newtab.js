@@ -147,10 +147,31 @@ var images = [
 var imageHead = document.getElementById("image-head");
 var i = 0;
 
-setInterval(function() {
-      imageHead.style.backgroundImage = "url(" + images[i] + ")";
-      i = i + 1;
-      if (i == images.length) {
-      	i =  0;
-      }
-}, 30000);
+// setInterval(function() {
+//       imageHead.style.backgroundImage = "url(" + images[i] + ")";
+//       i = i + 1;
+//       if (i == images.length) {
+//       	i =  0;
+//       }
+// }, 60000);
+
+document.getElementById("changebg").onclick=function(){
+    imageHead.style.backgroundImage = "url(" + images[i] + ")";
+    i = i+1;
+    if (i == images.length) {
+        i =  0;
+    }
+}
+
+
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+document.getElementById("openbtn").onclick=function(){
+    document.getElementById("mySidebar").style.width = "450px";
+    document.getElementById("main").style.marginLeft = "0px";
+}
+
+document.getElementById("sideclosebtn").onclick=function(){
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+

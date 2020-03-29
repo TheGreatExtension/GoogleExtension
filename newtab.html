@@ -8,38 +8,49 @@
 </head>
 <body>
   <div id="image-head" class="image-head">
-  <div class="centering-hack">
-    <br>
-    <p id="demo" >Add a New Event</p>
-    <form>
-    <input type="radio" id="exam" value="Exam" name="type">
-    <label for="Exam">Exam</label>
-    <input type="radio" id="ddl" value="Ddl" name="type">
-    <label for="Ddl">Deadline</label>
-    <input type="radio" id="et" value="Et" name="type">
-    <label for="Et">Event</label>
-    <input type="radio" id="ot" value="Ot" name="type">
-    <label for="Ot">Other</label>
-    </form>
-    <br>
-    <form id="form_id" method = "POST">
-      <label for="meeting-time">Time for your event:</label>
-      <input type="datetime-local" id="meeting-time"
-          name="EventTime" value="2020-04-01T19:30"
-          min="2018-06-07T00:00" max="2030-06-14T00:00">
+    <div class="centering-hack">
+      <div id="mySidebar" class="sidebar">
+        <a class="closebtn" id="sideclosebtn">&times;</a>
+        <table id="insertContent"></table> 
+      </div>
+      <div id="main">
+        <button class="openbtn" id="openbtn">&#9776; Open Notes</button> 
+        <div class="tooltip">
+        <img class="bgbtn" id="changebg" src="https://img.icons8.com/ios/24/000000/puzzle.png"/>
+          <span class="tooltiptext">click to change background image</span>
+        </div>
+      </div>
+      <p id="demo" >Add a New Event</p>
+      <form>
+      <input type="radio" id="exam" value="Exam" name="type">
+      <label for="Exam">Exam</label>
+      <input type="radio" id="ddl" value="Ddl" name="type">
+      <label for="Ddl">Deadline</label>
+      <input type="radio" id="et" value="Et" name="type">
+      <label for="Et">Event</label>
+      <input type="radio" id="ot" value="Ot" name="type">
+      <label for="Ot">Other</label>
+      </form>
       <br>
-      <br>
-      <label>Notes:</label>
-      <br>
-      <br>
-      <textarea id="description" placeholder="Description" rows = "5" cols = "60" ></textarea>
-      <br>   
-    </form>
-    <input type="submit" value="Add" id="button">
-    <table id="insertContent"></table> 
-  </div>
+      <form id="form_id" method = "POST">
+        <label for="meeting-time">Time for your event:</label>
+        <input type="datetime-local" id="meeting-time"
+            name="EventTime" value="2020-04-01T19:30"
+            min="2018-06-07T00:00" max="2030-06-14T00:00">
+        <br>
+        <br>
+        <label>Notes:</label>
+        <br>
+        <br>
+        <textarea id="description" placeholder="Description" rows = "5" cols = "60" ></textarea>
+        <br>   
+      </form>
+      <input type="submit" value="Add" id="button">
     </div>
-</div>
+  </div>
+</div>   
+    
+    
 </body>
 </html>
 <script src="newtab.js"></script>
