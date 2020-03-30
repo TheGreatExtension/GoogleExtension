@@ -3,9 +3,7 @@ var events = []
 var pairs = []
 var currTime;
 var currEvent;
-
-
-
+console.log(screen.width)
 function update(){
     document.getElementById('insertContent').innerHTML = "";   //clear
     tempEvent = []
@@ -172,7 +170,7 @@ document.getElementById("changebg").onclick=function(){
 
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
 document.getElementById("openbtn").onclick=function(){
-    document.getElementById("mySidebar").style.width = "450px";
+    document.getElementById("mySidebar").style.width = "80%";
     document.getElementById("main").style.marginLeft = "0px";
 }
 

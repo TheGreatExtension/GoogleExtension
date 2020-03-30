@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    width: 100%;
   }
   
 .image-head {
@@ -13,21 +14,25 @@ body, html {
   padding: 0;
   color: black;
   text-align: center;
-  /* transition: background 60s linear; */
+  transition: background 60s linear;
 }
 
 table {  
     color: #F0F8FF;
     font-family: Helvetica, Arial, sans-serif;
-    width: 400px; 
+    max-width: 460px; 
     border-collapse: 
     collapse; border-spacing: 0; 
     margin: 10px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 td, th {  
     border: 1px solid #4B0082; /* No more visible border */
-    height: 30px; 
+    height: 40px; 
+    width: 50px;
     transition: all 0.3s;  /* Simple transition for hover effect */
 }
 
@@ -79,7 +84,7 @@ tr td:hover { background:#B0C4DE; color: #FFF; }
 /* The sidebar menu */
 .sidebar {
     height: 100%; 
-    width: 450px; /* width - change this with JavaScript */
+    width: 80%; /* width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -112,7 +117,6 @@ tr td:hover { background:#B0C4DE; color: #FFF; }
     transition: margin-left .5s; /* If you want a transition effect */
     padding: 20px;
 }
-  
 
 .bgbtn{
     margin: 5px;
@@ -135,8 +139,6 @@ tr td:hover { background:#B0C4DE; color: #FFF; }
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
     top: -5px;
