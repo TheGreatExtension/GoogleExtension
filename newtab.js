@@ -153,7 +153,7 @@ document.getElementById("autobg").onclick=function(){
             if (i == images.length) {
                 i =  0;
             }
-      }, 30000);
+      }, 10000);
     }
 }
 
